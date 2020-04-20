@@ -104,7 +104,7 @@ interface OptionHash {
 export default class RevitalizeLeftPanel extends Vue {
   private title1 = "乡村振兴示范带总览";
   private title2 = "农旅融合平台用户分析";
-  private t = true;
+  private t = false;
   public options: OptionHash = {};
   public data: Array<object> = radarData;
   created() {

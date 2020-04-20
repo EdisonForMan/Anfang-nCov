@@ -1,6 +1,6 @@
 <template>
   <div class="revitalize_project">
-    <div class="bottom">{{company}}</div>
+    <!-- <div class="bottom">{{company}}</div> -->
     <div class="flower" />
     <header>
       {{title}}

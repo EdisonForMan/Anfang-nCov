@@ -10,7 +10,6 @@ import "swiper/css/swiper.css";
 Vue.use(VueAwesomeSwiper);
 Vue.prototype.$hub = new Vue(); //  全局事件线程
 Vue.prototype.$window = window;
-Vue.prototype.$jq = (Window as any).$;
 const $vue: JSX.ElementClass = new Vue({
   router,
   store,
@@ -18,9 +17,15 @@ const $vue: JSX.ElementClass = new Vue({
 }).$mount("#app");
 (Window as any).$vue = $vue;
 
-arcgisApi((arcgisApi: JSX.EsriObject) => {
-  Vue.prototype.$ARCGIS_API = arcgisApi;
+/**
+ * resource load fn
+ */
+(function() {
   (Window as any).$vue.$store.state.arcgisDone = true;
-});
+})();
+// arcgisApi((arcgisApi: JSX.EsriObject) => {
+//   Vue.prototype.$ARCGIS_API = arcgisApi;
+//   (Window as any).$vue.$store.state.arcgisDone = true;
+// });
 
 Vue.config.productionTip = false;

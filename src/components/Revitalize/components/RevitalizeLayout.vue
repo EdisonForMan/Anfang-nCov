@@ -2,7 +2,6 @@
   <div class="revitalize_layout">
     <top v-if="false" />
     <left />
-    <scroll />
     <transition name="fade">
       <project v-show="!doLine" />
     </transition>
@@ -14,7 +13,6 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import RevitalizeScroll from "./frame/RevitalizeScroll.vue";
 import RevitalizeLeftPanel from "./frame/RevitalizeLeftPanel.vue";
 import RevitalizeProjectPanel from "./frame/RevitalizeProjectPanel.vue";
 import RevitalizeLinePanel from "./frame/RevitalizeLinePanel.vue";
@@ -22,7 +20,6 @@ import RevitalizeTopPanel from "./frame/RevitalizeTopPanel.vue";
 
 @Component({
   components: {
-    ["scroll"]: RevitalizeScroll,
     ["top"]: RevitalizeTopPanel,
     ["left"]: RevitalizeLeftPanel,
     ["project"]: RevitalizeProjectPanel,

@@ -1,6 +1,6 @@
 <template>
   <div :class="`revitalize_line ${t?`normal`:`little`}`">
-    <div class="bottom">{{company}}</div>
+    <!-- <div class="bottom">{{company}}</div> -->
     <header>
       {{title}}
       <span :class="`t ${t?``:`turn`}`" @click="()=>{this.t=!this.t}" />
@@ -99,7 +99,7 @@ export default class RevitalizeLinePanel extends Vue {
   private attributes?: any = {};
   private projectList: Array<any> = [];
   private company = "温州市农业农村局建设 温州设计集团技术支持";
-  private t = true;
+  private t = false;
   private option = projectOption;
   @State("projectData") stateProjectData!: JSX.ScrollProject;
   mounted() {
