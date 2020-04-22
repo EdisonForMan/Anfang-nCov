@@ -4,9 +4,9 @@
 
 <script lang="ts">
 import { Component, Mixins, Watch } from "vue-property-decorator";
-import MapboxCore from "@/components/Core/MapboxCore.vue";
+import MapboxCore from "@/components/Core/MapboxChartCore.vue";
 import { State } from "vuex-class";
-
+import { sources } from "./sources";
 @Component({
   methods: {}
 })
@@ -17,6 +17,9 @@ export default class MapboxMap extends Mixins(MapboxCore) {
   async arcgisDoneChange(value: boolean) {
     if (value) {
       await this.initMap(this.MapId);
+      this.map.on("load", async () => {
+        await sources(this);
+      });
     }
   }
   //    Getter/
@@ -27,6 +30,9 @@ export default class MapboxMap extends Mixins(MapboxCore) {
   async mounted(): Promise<void> {
     if (this.stateArcgisDone) {
       await this.initMap(this.MapId);
+      this.map.on("load", async () => {
+        await sources(this);
+      });
     }
     this.eventRegister();
   }
@@ -40,10 +46,10 @@ export default class MapboxMap extends Mixins(MapboxCore) {
 .mapbox_map {
   width: 100%;
   height: 100%;
-  position: relative;
-  .mapboxgl-canvas {
-    left: 0;
-    top: 0;
-  }
+  // position: absolute;
+  // .mapboxgl-canvas {
+  //   left: 0;
+  //   top: 0;
+  // }
 }
 </style>

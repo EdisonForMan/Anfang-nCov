@@ -1,11 +1,11 @@
 <template>
   <div class="revitalize">
-    <rheader />
+    <rheader v-if="false" />
     <transition name="fade">
       <mapbox />
     </transition>
-    <rlayout />
-    <smoke />
+    <rlayout v-if="false" />
+    <smoke v-if="false" />
   </div>
 </template>
 
@@ -41,6 +41,7 @@ export default class Revitalize extends Vue {
   position: relative;
 }
 .revitalize:before {
+  display: none;
   content: "";
   position: fixed;
   bottom: 0;

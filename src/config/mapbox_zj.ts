@@ -20,6 +20,7 @@ export default {
       tiles: [
         "http://www.zjditu.cn/vtiles/maps/tdt_zj/{z}/{x}/{y}.mvt?v=202003",
       ],
+      tileSize: 512
     },
   },
   layers: [

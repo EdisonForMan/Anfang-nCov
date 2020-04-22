@@ -2236,6 +2236,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+claygl@^1.2.1:
+  version "1.3.0"
+  resolved "https://registry.npm.taobao.org/claygl/download/claygl-1.3.0.tgz#7a6e2903210519ac358848f5d78070ed211685f3"
+  integrity sha1-em4pAyEFGaw1iEj114Bw7SEWhfM=
+
 clean-css@4.2.x:
   version "4.2.3"
   resolved "https://registry.npm.taobao.org/clean-css/download/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
@@ -3119,12 +3124,34 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
+echarts-gl@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/echarts-gl/download/echarts-gl-1.1.1.tgz#3df321cd4df7fee774e9a09e4dd29c9fd7e9104f"
+  integrity sha1-PfMhzU33/ud06aCeTdKcn9fpEE8=
+  dependencies:
+    claygl "^1.2.1"
+    zrender "^4.0.4"
+
+echarts@^3.3.2:
+  version "3.8.5"
+  resolved "https://registry.npm.taobao.org/echarts/download/echarts-3.8.5.tgz?cache=0&sync_timestamp=1584551114407&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fecharts%2Fdownload%2Fecharts-3.8.5.tgz#58e4a51d2743c6fb75257b0dc0a9cf9f5378ac0e"
+  integrity sha1-WOSlHSdDxvt1JXsNwKnPn1N4rA4=
+  dependencies:
+    zrender "3.7.4"
+
 echarts@^4.7.0:
   version "4.7.0"
-  resolved "https://registry.npm.taobao.org/echarts/download/echarts-4.7.0.tgz?cache=0&sync_timestamp=1584522755461&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fecharts%2Fdownload%2Fecharts-4.7.0.tgz#5b3875a4c2f91e3929425fabab9eace7e4098b3f"
+  resolved "https://registry.npm.taobao.org/echarts/download/echarts-4.7.0.tgz?cache=0&sync_timestamp=1584551114407&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fecharts%2Fdownload%2Fecharts-4.7.0.tgz#5b3875a4c2f91e3929425fabab9eace7e4098b3f"
   integrity sha1-Wzh1pML5HjkpQl+rq56s5+QJiz8=
   dependencies:
     zrender "4.3.0"
+
+echartslayer@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.npm.taobao.org/echartslayer/download/echartslayer-0.1.6.tgz#a423db96358faf774e84312b5d4b88f867afff4a"
+  integrity sha1-pCPbljWPr3dOhDErXUuI+Gev/0o=
+  dependencies:
+    echarts "^3.3.2"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -8643,7 +8670,12 @@ yorkie@^2.0.0:
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
 
-zrender@4.3.0:
+zrender@3.7.4:
+  version "3.7.4"
+  resolved "https://registry.npm.taobao.org/zrender/download/zrender-3.7.4.tgz#f847d53948481ef6d42906d1ea9aeec7acbefdf2"
+  integrity sha1-+EfVOUhIHvbUKQbR6prux6y+/fI=
+
+zrender@4.3.0, zrender@^4.0.4:
   version "4.3.0"
-  resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.3.0.tgz?cache=0&sync_timestamp=1583136509110&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fzrender%2Fdownload%2Fzrender-4.3.0.tgz#9f056121b20bbae44414d287bf6a119ff7042661"
+  resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.3.0.tgz#9f056121b20bbae44414d287bf6a119ff7042661"
   integrity sha1-nwVhIbILuuREFNKHv2oRn/cEJmE=

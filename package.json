@@ -14,6 +14,8 @@
     "@types/swiper": "^5.2.1",
     "core-js": "^3.6.4",
     "echarts": "^4.7.0",
+    "echarts-gl": "^1.1.1",
+    "echartslayer": "^0.1.6",
     "esri-loader": "^2.13.0",
     "swiper": "^5.3.6",
     "vue": "^2.6.11",
