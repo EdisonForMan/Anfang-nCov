@@ -17,7 +17,7 @@
     "echarts-gl": "^1.1.1",
     "echartslayer": "^0.1.6",
     "esri-loader": "^2.13.0",
-    "swiper": "^5.3.6",
+    "swiper": "^6.5.1",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.0.0-rc.0",
     "vue-class-component": "^7.2.2",
